@@ -1,32 +1,31 @@
 <!DOCTYPE html> 
     <head>
-        <style>
-            .object{
-                width: 150px;
-                height: 150px;
-                position: relative;
-                background-color: black;
-                -webkit-animation: objectmove 5s infinite;
-                animation: objectmove 5s infinite;
-            }
-            @-webkit-keyframes objectmove{
-                0%{top:0px;left:0px;background: black;}
-                25%{top:0px;left: 300px;background: red;}
-                50%{top:300px;left: 300px;background: blue;}
-                75%{top:300px;left: 0;background: green;}
-                100%{top: 0px;left: 0;background: black;}
-            }
-            @keyframes objectmove{
-                0%{top:0px;left:0px;background: black;}
-                25%{top:0px;left: 300px;background: red;}
-                50%{top:300px;left: 300px;background: blue;}
-                75%{top:300px;left: 0;background: green;}
-                100%{top: 0px;left: 0;background: black;}
-            }
-        </style>
+        <title>
+            CSS Slider
+        </title>
+        <link rel="stylesheet" href="css/keyframe.css" type="text/css">
     </head>
+
     <body>
-        <div class="object"></div>
+        <div class="container">
+            <h1>CSS Slider</h1>
+            <ul class="thumbs">
+                <li><a href="#slide1"><img src= "images/hawaii.jpeg"><span>This is imgae 1</span></a></li>
+                <li><a href="#slide2"><img src= "images/italy.jpeg"><span>This is imgae 2</span></a></li>
+                <li><a href="#slide3"><img src= "images/london.jpeg"><span>This is imgae 3</span></a></li>
+                <li><a href="#slide4"><img src= "images/spain.jpeg"><span>This is imgae 4</span></a></li>
+                <li><a href="#slide5"><img src= "images/swit.jpeg"><span>This is imgae 5</span></a></li>
+
+            </ul>
+            <ul class="slides">
+                <li class="first" id="slide1"><img src="images/hawaii.jpeg"></li>
+                <li id="slide2"><img src="images/italy.jpeg"></li>
+                <li id="slide3"><img src="images/london.jpeg"></li>
+                <li id="slide4"><img src="images/spain.jpeg"></li>
+                <li id="slide5"><img src="images/swit.jpeg"></li>
+
+            </ul>
+        </div>
     </body>
 
 
